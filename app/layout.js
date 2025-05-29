@@ -1,4 +1,5 @@
 import '../styles/globals.css';
+import Link from 'next/link';
 
 export const metadata = {
   title: 'Course Management System',
@@ -10,7 +11,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <nav style={{ padding: '1rem', background: '#eee' }}>
-          <a href="/" style={{ marginRight: 10 }}>Home</a>
+          <Link href="/" style={{ marginRight: 10 }}>Home</Link>
           <a href="/users" style={{ marginRight: 10 }}>Users</a>
           <a href="/courses" style={{ marginRight: 10 }}>Courses</a>
           <a href="/packages">Packages</a>
